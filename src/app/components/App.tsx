@@ -47,7 +47,7 @@ const App = ({}) => {
     const onCreate = React.useCallback(() => {
         // const count = parseInt(textbox.current.value, 10);
         const node = convert(code);
-        parent.postMessage({pluginMessage: {type: 'create-latex-svg', svg: node, source: code, scale: 200}}, '*');
+        parent.postMessage({pluginMessage: {type: 'create-latex-svg', svg: node, source: code, scale: 2}}, '*');
     }, [convert, code]);
 
     const onCancel = React.useCallback(() => {
